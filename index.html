@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="ClipNest helps you save public TikTok videos you own or have permission to download.">
+  <title>ClipNest — TikTok Video Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ClipNest home"><span class="brand-mark">C</span><span>clipnest</span></a>
+    <nav><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
+    <a class="header-cta" href="#downloader">Try it free <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> SIMPLE VIDEO SAVING</div>
+      <h1>Your favorite videos,<br><span>ready to keep.</span></h1>
+      <p class="hero-copy">A simple way to save public TikTok videos you created or have permission to download.</p>
+
+      <div class="download-card" id="downloader">
+        <div class="card-heading">
+          <div class="card-icon">↓</div>
+          <div><h2>Video downloader</h2><p>Paste a TikTok link to get started</p></div>
+        </div>
+        <form id="download-form">
+          <label class="sr-only" for="video-url">TikTok video URL</label>
+          <div class="input-wrap">
+            <span class="link-icon">↗</span>
+            <input id="video-url" type="url" placeholder="https://www.tiktok.com/@user/video/..." autocomplete="url" required>
+            <button class="paste-btn" id="paste-btn" type="button">Paste</button>
+          </div>
+          <button class="download-btn" id="download-btn" type="submit"><span>Download video</span><span class="arrow">→</span></button>
+        </form>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+        <div class="trust-row"><span>✓ No account needed</span><span>✓ Public links only</span><span>✓ MP4 format</span></div>
+      </div>
+      <div class="hero-note">Please respect creators. Only save videos you own or are authorized to download.</div>
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    </section>
+
+    <section class="steps section" id="how">
+      <div class="section-kicker">THREE EASY STEPS</div>
+      <h2>Save a video in seconds.</h2>
+      <div class="step-grid">
+        <article class="step-card"><div class="step-number">01</div><div class="step-emoji">🔗</div><h3>Copy the link</h3><p>Open a public TikTok video and copy its share link.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-emoji">📋</div><h3>Paste it here</h3><p>Place the link in the box above and select Download video.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-emoji">✨</div><h3>Save your file</h3><p>If the post is available and supported, your MP4 download will begin.</p></article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-icon">ⓘ</div>
+      <div><h3>A quick note about creator rights</h3><p>ClipNest is an independent tool and is not affiliated with TikTok. Respect copyright, privacy, and the creator's choices. Do not download or redistribute content without permission.</p></div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-kicker">GOOD TO KNOW</div>
+      <h2>Frequently asked questions</h2>
+      <details><summary>Which links are supported?</summary><p>Public TikTok video links that are directly accessible may work. Private, removed, restricted, or unavailable posts cannot be retrieved.</p></details>
+      <details><summary>Do I need to sign in?</summary><p>No ClipNest account is required. The service does not ask for your TikTok password or cookies.</p></details>
+      <details><summary>Can I download any video?</summary><p>Only download videos you created or have permission to save. You are responsible for respecting applicable laws and platform terms.</p></details>
+      <details><summary>Why might a download fail?</summary><p>Links can fail if a post is private, deleted, region-restricted, age-restricted, or no longer supported by the extraction engine.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="/"><span class="brand-mark">C</span><span>clipnest</span></a><span>Independent tool · Not affiliated with TikTok</span><a href="#faq">Help & FAQ</a></footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
